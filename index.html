@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="row">
+        <h1 class=" col-12 col-md-9 text-center col-md-9">
+          Find your dream home <br> in the
+          vibrant heart <br> of Yenagoa.
+        </h1>
+        <picture class="col-12 col-md-3">
+          <!-- <source
+            srcset="./assets/img/real_estate-optimised-desktop.jpeg"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="./assets/img/real_estate-optimised-tab.jpeg"
+            media="(max-width: 800px)"
+          />
+          <source
+            srcset="./assets/img/real_estate-optimised-mobile.jpeg"
+            media="(max-width: 500px)"
+          /> -->
+          <img
+            src="./assets/img/real_estate-optimised-desktop.jpeg"
+            alt="image of house"
+          />
+        </picture>
+    </div>
+    </section>
+
+    <main>
+        <section class="col-12 house-type-section" >
+          <div class="container">
+            <dl class="row">
+                <dt class="col-12">
+                    <h2 class="text-sm-center">Apartments</h2>
+                </dt>
+                <dd class="col-12">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Rooms</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option>Choose number of rooms...</option>
+                      <option value="1">One bedroom</option>
+                      <option value="2">Two bedroom</option>
+                      <option value="3">Three bedroom</option>
+                    </select>
+                  </div>
+                  
+                  <div class="tab-selection-container">
+                    <ul class="tabs text-sm-center">
+                      <li class="tab-link current" data-tab="tab-1">Tab One</li>
+                      <li class="tab-link" data-tab="tab-2">Tab Two</li>
+                      <li class="tab-link" data-tab="tab-3">Tab Three</li>
+                     </ul>
+                    </div>
+                    <div id="tab-1" class="tab-content current">
+                      <ul class="d-flex flex-column flex-md-row gap-3 flex-wrap">
+                        <li>
+                          <div class="card" style="width: 18rem;">
+                            <img src="/tinified/house1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        
+                        </li>
+                        <li>
+                          <div class="card" style="width: 18rem;">
+                            <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        
+                        </li>
+  
+                        <li>
+                          <div class="card" style="width: 18rem;">
+                            <img src="/tinified/house4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        
+                        </li>
+  
+                      </ul>
+                    </div>
+                    <div id="tab-2" class="tab-content grid">
+                      <ul class="d-flex flex-column flex-md-row flex-wrap gap-3">
+                        <li>
+                          <div class="card" style="width: 18rem;">
+                            <img src="/tinified/house5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        
+                        </li>
+                        <li>
+                          <div class="card" style="width: 18rem;">
+                            <img src="/tinified/house6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        
+                        </li>
+                        <li>
+                          <div class="card" style="width: 18rem;">
+                            <img src="/tinified/house5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        
+                        </li>
+  
+                      </ul>
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                      <ul class="d-flex flex-column flex-md-row flex-wrap gap-3">
+                          <li>
+                            <div class="card" style="width: 18rem;">
+                              <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                          
+                          </li>
+                          <li>
+                            <div class="card" style="width: 18rem;">
+                              <img src="/tinified/house4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                          
+                          </li>
+                          <li>
+                            <div class="card" style="width: 18rem;">
+                              <img src="/tinified/house1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                          
+                          </li>
+        
+                      </ul>
+                    </div>
+                </dd>
+            </dl>
+          </div>
+        </section>
+
+
+
+        <section></section>
+    </main>
+   
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script src="./js/tabs.js"></script>
+  </body>
+</html>
