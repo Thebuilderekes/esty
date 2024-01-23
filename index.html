@@ -44,12 +44,13 @@
     </nav>
     <section class="hero-section">
       <div class="row">
-        <h1 class=" col-12 col-md-9 text-center col-md-9">
+        <h1 class="col-12 text-center">
           Find your dream home <br> in the
-          vibrant heart <br> of Yenagoa.
+          vibrant city <br> of Yenagoa.
         </h1>
-        <picture class="col-12 col-md-3">
-          <!-- <source
+        <div class="container">
+        <picture class="col-12">
+          <source
             srcset="./assets/img/real_estate-optimised-desktop.jpeg"
             media="(min-width: 1000px)"
           />
@@ -60,26 +61,27 @@
           <source
             srcset="./assets/img/real_estate-optimised-mobile.jpeg"
             media="(max-width: 500px)"
-          /> -->
+          />
           <img
             src="./assets/img/real_estate-optimised-desktop.jpeg"
             alt="image of house"
           />
         </picture>
+      </div>
     </div>
     </section>
 
     <main>
         <section class="col-12 house-type-section" >
           <div class="container">
-            <dl class="row">
+            <dl class="row p-4 p-md-4">
                 <dt class="col-12">
-                    <h2 class="text-sm-center">Apartments</h2>
+                    <h2 class="text-md-center my-4">Featured apartments</h2>
                 </dt>
                 <dd class="col-12">
-                  <div class="input-group mb-3">
+                  <div class="input-group mb-3 container">
                     <label class="input-group-text" for="inputGroupSelect01">Rooms</label>
-                    <select class="form-select" id="inputGroupSelect01">
+                    <select class="form-select p-4" id="inputGroupSelect01">
                       <option>Choose number of rooms...</option>
                       <option value="1">One bedroom</option>
                       <option value="2">Two bedroom</option>
@@ -89,9 +91,9 @@
                   
                   <div class="tab-selection-container">
                     <ul class="tabs text-sm-center">
-                      <li class="tab-link current" data-tab="tab-1">Tab One</li>
-                      <li class="tab-link" data-tab="tab-2">Tab Two</li>
-                      <li class="tab-link" data-tab="tab-3">Tab Three</li>
+                      <li class="tab-link current" data-tab="tab-1">One bedroom</li>
+                      <li class="tab-link" data-tab="tab-2">Two bedroom</li>
+                      <li class="tab-link" data-tab="tab-3">Three bedroom</li>
                      </ul>
                     </div>
                     <div id="tab-1" class="tab-content current">
@@ -105,7 +107,6 @@
                               <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                           </div>
-                        
                         </li>
                         <li>
                           <div class="card" style="width: 18rem;">
@@ -216,7 +217,6 @@
 
 
 
-        <section></section>
     </main>
    
 

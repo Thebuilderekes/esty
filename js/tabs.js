@@ -11,9 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
       tabContents.forEach(content => content.classList.remove('current'));
    
       // Activate the selected tab and content
-      tabs[selectedTabIndex].classList.add('current');
-      tabContents[selectedTabIndex].classList.add('current');
+      
+      (function tabSelection(){
+          tabs[selectedTabIndex].classList.add('current');
+          tabContents[selectedTabIndex].classList.add('current');
+        })()
+        
+            
+        });
     });
-   });
-   
-//  
+    
+    
+
+
+
+
