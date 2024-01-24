@@ -1,28 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const selectElement = document.getElementById('inputGroupSelect01');
-    const tabs = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
-   
-    selectElement.addEventListener('change', function() {
-      const selectedTabIndex = parseInt(this.value) - 1; // Adjust for zero-based indexing
-   
-      // Deactivate all tabs and contents
-      tabs.forEach(tab => tab.classList.remove('current'));
-      tabContents.forEach(content => content.classList.remove('current'));
-   
-      // Activate the selected tab and content
-      
-      (function tabSelection(){
-          tabs[selectedTabIndex].classList.add('current');
-          tabContents[selectedTabIndex].classList.add('current');
-        })()
-        
-            
-        });
+document.addEventListener("DOMContentLoaded", function() {
+  const tabLinks = document.querySelectorAll("ul.tabs li");
+
+  tabLinks.forEach(function(tabLink) {
+    tabLink.addEventListener("click", function() {
+      const tabId = tabLink.dataset.tab;
+
+      const tabLinks = document.querySelectorAll("ul.tabs li");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabLinks.forEach(function(link) {
+        link.classList.remove("current");
+      });
+      tabContents.forEach(function(content) {
+        content.classList.remove("current");
+      });
+
+      tabLink.classList.add("current");
+      document.getElementById(tabId).classList.add("current");
     });
-    
-    
-
-
-
-
+  });
+});

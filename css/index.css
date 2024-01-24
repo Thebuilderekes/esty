@@ -101,18 +101,16 @@ h1 {
  font-size: var(--medium-fs);
 }
 
-@media(min-width: 900px){
+@media(min-width: 800px){
 h1 {
     font-size: var(--large-fs);
 }
+
+h2 {
+  font-size: var(--large-fs);
+ }
 }
 
-
-/* @media (min-width: 800px){
-.hero-section picture img {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
-} */
 
 .hero-section {
     padding-top: var(--large-spacing);
@@ -128,11 +126,13 @@ h1 {
 /* Tab styles */
 
 .container{
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-
+ul{
+  padding:0;
+}
 
 ul.tabs{
     margin: 0px;
@@ -140,16 +140,20 @@ ul.tabs{
     list-style: none;
 }
 ul.tabs li{
+  display: flex;
     background: none;
-    color: #222;
     display: inline-block;
     padding: 10px 0;
     cursor: pointer;
 }
 
+.tab-content li .card {
+  flex-grow: 1;
+}
+
 ul.tabs li.current{
     background: var(--grey);
-    color: #222;
+    color: #2105f9;
     padding: 10px;
 }
 

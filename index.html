@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+      <div class="container-fluid gap-4">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
@@ -24,7 +24,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -42,14 +42,14 @@
         </div>
       </div>
     </nav>
-    <section class="hero-section">
+    <section class="hero-section container">
       <div class="row">
         <h1 class="col-12 text-center">
-          Find your dream home <br> in the
-          vibrant city <br> of Yenagoa.
+          Find your next rental <br> in the
+          vibrant city <br> of Location.
         </h1>
-        <div class="container">
-        <picture class="col-12">
+        <div class="hero-img__container">
+        <picture class="col-12 d-flex justify-content-center">
           <source
             srcset="./assets/img/real_estate-optimised-desktop.jpeg"
             media="(min-width: 1000px)"
@@ -72,74 +72,70 @@
     </section>
 
     <main>
-        <section class="col-12 house-type-section" >
+        <section class="col-12 house-type-section py-4 p-md-4" >
           <div class="container">
-            <dl class="row p-4 p-md-4">
+            <dl class="row">
                 <dt class="col-12">
-                    <h2 class="text-md-center my-4">Featured apartments</h2>
+                    <h2 class="text-center my-4">Featured apartments</h2>
                 </dt>
-                <dd class="col-12">
-                  <div class="input-group mb-3 container">
-                    <label class="input-group-text" for="inputGroupSelect01">Rooms</label>
-                    <select class="form-select p-4" id="inputGroupSelect01">
-                      <option>Choose number of rooms...</option>
-                      <option value="1">One bedroom</option>
-                      <option value="2">Two bedroom</option>
-                      <option value="3">Three bedroom</option>
-                    </select>
-                  </div>
-                  
-                  <div class="tab-selection-container">
-                    <ul class="tabs text-sm-center">
-                      <li class="tab-link current" data-tab="tab-1">One bedroom</li>
-                      <li class="tab-link" data-tab="tab-2">Two bedroom</li>
-                      <li class="tab-link" data-tab="tab-3">Three bedroom</li>
+                <dd class="col-12 ">  
+                  <div class="tab-selection-container d-flex justify-content-center">
+                    <ul class="tabs text-sm-center d-flex gap-4 fw-semibold">
+                      <li class="tab-link inline-block current" data-tab="tab-1">One bedroom</li>
+                      <li class="tab-link inline-block" data-tab="tab-2">Two bedroom</li>
+                      <li class="tab-link inline-block" data-tab="tab-3">Three bedroom</li>
                      </ul>
-                    </div>
-                    <div id="tab-1" class="tab-content current">
-                      <ul class="d-flex flex-column flex-md-row gap-3 flex-wrap">
-                        <li>
-                          <div class="card" style="width: 18rem;">
+                  </div>
+                    <div id="tab-1" class="tab-content py-4 current">
+                      <ul class="d-flex flex-column flex-md-row justify-content-center gap-4 flex-wrap">
+                        <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
                             <img src="/tinified/house1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body pb-4">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                           </div>
                         </li>
-                        <li>
-                          <div class="card" style="width: 18rem;">
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
                             <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body pb-4">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                           </div>
-                        
                         </li>
-  
-                        <li>
-                          <div class="card" style="width: 18rem;">
-                            <img src="/tinified/house4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
+                            <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body pb-4">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                           </div>
-                        
                         </li>
-  
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
+                            <img src="/tinified/house1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body pb-4">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </li>
                       </ul>
                     </div>
-                    <div id="tab-2" class="tab-content grid">
-                      <ul class="d-flex flex-column flex-md-row flex-wrap gap-3">
-                        <li>
-                          <div class="card" style="width: 18rem;">
+                    <div id="tab-2" class="tab-content py-4 grid">
+                      <ul class="d-flex flex-column flex-md-row justify-content-center gap-4 flex-wrap">
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
                             <img src="/tinified/house5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body pb-4">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -147,10 +143,20 @@
                           </div>
                         
                         </li>
-                        <li>
-                          <div class="card" style="width: 18rem;">
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
+                            <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body pb-4">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </li>
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
                             <img src="/tinified/house6.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body pb-4">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -158,10 +164,10 @@
                           </div>
                         
                         </li>
-                        <li>
-                          <div class="card" style="width: 18rem;">
+                         <li class="d-flex">
+                          <div class="card flex-grow-1" style="width: 18rem;">
                             <img src="/tinified/house5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body pb-4">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -172,12 +178,12 @@
   
                       </ul>
                     </div>
-                    <div id="tab-3" class="tab-content">
-                      <ul class="d-flex flex-column flex-md-row flex-wrap gap-3">
-                          <li>
-                            <div class="card" style="width: 18rem;">
+                    <div id="tab-3" class="tab-content py-4">
+                      <ul class="d-flex flex-column flex-md-row justify-content-center gap-4 flex-wrap">
+                           <li class="d-flex">
+                            <div class="card flex-grow-1" style="width: 18rem;">
                               <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
+                              <div class="card-body pb-4">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -185,29 +191,36 @@
                             </div>
                           
                           </li>
-                          <li>
-                            <div class="card" style="width: 18rem;">
-                              <img src="/tinified/house4.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
+                           <li class="d-flex">
+                            <div class="card flex-grow-1" style="width: 18rem;">
+                              <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body pb-4">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                               </div>
                             </div>
-                          
                           </li>
-                          <li>
-                            <div class="card" style="width: 18rem;">
+                           <li class="d-flex">
+                            <div class="card flex-grow-1" style="width: 18rem;">
+                              <img src="/tinified/house3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body pb-4">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                          </li>
+                           <li class="d-flex">
+                            <div class="card flex-grow-1" style="width: 18rem;">
                               <img src="/tinified/house1.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
+                              <div class="card-body pb-4">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                               </div>
                             </div>
-                          
                           </li>
-        
                       </ul>
                     </div>
                 </dd>
