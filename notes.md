@@ -1,4 +1,5 @@
-next feature
-- create display block and display none classes.
-create a tab to display all houses
-- set an all house category tab in the initial gallery to show all houses and then apply the display none class to that tab container to hide all the houses when you begin to select other tabs
+Documentation notes
+
+- Give image names simple names
+- Have all images put into folders with the name of the section where they are used, for all pages of the website
+- create an html page that has has full description of what the template is about.  

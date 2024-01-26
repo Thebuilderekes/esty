@@ -1,6 +1,4 @@
-.house-section {
-    margin: var(--large-spacing) 0;
-}
+
 
 
 
@@ -14,7 +12,7 @@
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    padding: var(--small-spacing);
     border-radius: 5px;
     text-align: center;
     display: none;
@@ -57,7 +55,6 @@
     border-radius: 5px;
     overflow: hidden;
     background-color: var(--grey);
-    margin: 10px;
   }
   
 
@@ -66,10 +63,7 @@
   }
   
 
-  .card-content a {
-    font-family: 'Roboto', sans-serif;
-
-  }
+ 
   .card-title {
     font-size: var(--medium-fs);
     /* margin-bottom: 5px; */
@@ -85,7 +79,6 @@
   }
   
   dl {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
   
 
@@ -93,7 +86,7 @@
   
   .contact-button {
     display: inline-block;
-    padding: 10px 15px;
+    padding: var(--small-spacing) 15px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
