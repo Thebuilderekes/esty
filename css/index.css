@@ -25,6 +25,7 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     font-family: 'Cormorant Garamond', serif;
+    
   }
   /*
     5. Improve media defaults
@@ -69,7 +70,8 @@
   --grey: #f3efef;
   --soft-white: #c9c9c9;
   --mid-black: #212121;
-  --blue: #3431df;
+  --blue: #07058d;
+  --light-blue: #b4c7f3;
 
 
   /*==================SPACING ============================*/
@@ -83,11 +85,12 @@
 
 
 h1 {
- font-size: var(--medium-fs);
+ font-size: var(--semi-large-fs);
 }
 
 h2 {
-  font-size: var(--medium-fs);
+ font-size: var(--semi-large-fs);
+  
 }
 
 @media(min-width: 800px){
@@ -114,13 +117,34 @@ nav ul li a {
   
   
 }
-nav .navbar-brand{
+/* nav .navbar-brand{
   color: var(--soft-white);
-}
+} */
 
 .nav-link {
   font-weight: 700;
 color: var(--soft-white);
+}
+
+.nav-link.active {
+  color: var(--soft-white)!important;
+
+}
+.nav-link:hover {
+  color: var(--grey);
+}
+
+nav .nav-link {
+  font-size: var(--semi-medium-fs);
+  color: var(--soft-white)!important;
+
+}
+
+@media (max-width: 400px){
+  .rounded-pill {
+    padding: 5px 10px;
+    width: 30%;
+  }
 }
 
 
@@ -129,7 +153,7 @@ color: var(--soft-white);
 }
 
 .house-type-section {
-    background-color:var(--soft-white) ;
+  background-color: var(--grey);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 
@@ -152,13 +176,20 @@ ul.tabs{
     list-style: none;
 }
 ul.tabs li{
-  font-size: var(--medium-fs);
+  font-size: var(--semi-medium-fs);
   font-weight: 700;
   display: flex;
     background: none;
     display: inline-block;
     padding: 10px 0;
     cursor: pointer;
+}
+
+@media (min-width: 900px){
+  ul.tabs li{
+    font-size: var(--medium-fs);
+
+  }
 }
 
 .tab-content li .card {
@@ -169,14 +200,14 @@ ul.tabs li{
 }
 
 ul.tabs li.current{
-    background: var(--grey);
+    background: var(--soft-white);
     color: var(--blue);
     padding: 10px;
 }
 
 .tab-content{
     display: none;
-    background: var(--grey);
+    background: var(--soft-white);
     padding: 15px;
 }
 
@@ -188,6 +219,10 @@ ul.tabs li.current{
   border: 1px solid #ccc;
   overflow: hidden;
   position: relative;
+}
+
+.card .card-body {
+  background-color: var(--grey);
 }
 
 .card img {

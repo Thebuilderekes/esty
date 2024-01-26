@@ -56,13 +56,13 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--grey);
     margin: 10px;
   }
   
 
   .card-content {
-    padding: 20px;
+    padding: var(--medium-spacing);
   }
   
 
@@ -71,13 +71,13 @@
 
   }
   .card-title {
-    font-size: 1.2em;
+    font-size: var(--medium-fs);
     /* margin-bottom: 5px; */
   }
   
   .card-address,
   .card-price {
-    font-size: 0.9em;
+    font-size: var(--semi-medium-fs);
     /* font-weight: 700; */
     margin-bottom: 5px;
   
@@ -93,7 +93,7 @@
   
   .contact-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
@@ -101,6 +101,12 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  @media (max-width: 380px ){
+    .contact-button {
+      font-size: var(--small-fs);
+    }
   }
   
   .contact-button:hover {
