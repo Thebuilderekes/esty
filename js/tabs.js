@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
   tabLinks.forEach(function(tabLink) {
     tabLink.addEventListener("click", function() {
       const tabId = tabLink.dataset.tab;
-
       const tabLinks = document.querySelectorAll("ul.tabs li");
       const tabContents = document.querySelectorAll(".tab-content");
 

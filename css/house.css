@@ -1,6 +1,8 @@
 
 
-
+  .house-section li img{
+  cursor: pointer;
+   }
 
 /* image full container styles */
 
