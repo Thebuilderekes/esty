@@ -130,8 +130,19 @@ body {
   background-color: var(--light-blue)
 };
 
+.hero-section {
+
+  font-family: "Archivo Black", sans-serif;
+
+
+  font-weight: 700 ! important;
+  font-style: normal;
+}
+
 h1 {
-  font-weight: 700;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700 ! important;
+  font-style: normal;
 }
 
 h2 {
@@ -154,6 +165,8 @@ h2 {
 
  nav ul li a {
    cursor: pointer; 
+
+text-decoration: none;
  }
  
 .nav-link-light {
@@ -170,7 +183,7 @@ color: var(--grey);
 
 nav .nav-link {
   font-size: var(--semi-medium-fs);
-
+text-decoration: none;
 }
 
 /*========== Footer Styles===========*/
