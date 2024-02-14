@@ -271,6 +271,7 @@ ul.tabs li {
 }
 
 ul.tabs li.current {
+  text-decoration: underline;
   background: var(--soft-grey);
   color: var(--blue);
   padding: var(--small-spacing);
