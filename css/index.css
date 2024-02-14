@@ -11,8 +11,9 @@ Version: 1.0
 1. Reset styles
 2. CSS variables
 3. General styles
-4. Tab content styles
-5. Card styles
+4. Hero section styles
+5. Tab content styles
+6. Card styles
 */
 
 /*=========== 1.Reset Styles ========*/
@@ -144,6 +145,49 @@ h6 {
   background-color: var(--light-blue);
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*======= Navigation Styles ==========*/
+
+nav ul li a {
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.nav-link-light {
+  color: var(--grey);
+}
+
+.nav-link.active {
+  color: var(--soft-grey) !important;
+}
+.nav-link:hover {
+  color: var(--grey);
+}
+
+nav .nav-link {
+  font-size: var(--semi-medium-fs);
+  text-decoration: none;
+}
+
+/*========== Footer Styles===========*/
+
+footer {
+  background-color: var(--mid-black);
+  color: var(--soft-grey);
+}
+footer ul li a {
+  color: var(--soft-grey);
+}
+
+
+
+
+/*====== 4. Hero section styles ================*/
 .hero-section {
   font-weight: 700 !important;
   font-style: normal;
@@ -185,53 +229,14 @@ h2 {
 }
 
 
-
 @media (min-width: 800px) {
   h2 {
     font-size: var(--large-fs);
   }
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-/*======= Navigation Styles ==========*/
-
-nav ul li a {
-  cursor: pointer;
-
-  text-decoration: none;
-}
-
-.nav-link-light {
-  color: var(--grey);
-}
-
-.nav-link.active {
-  color: var(--soft-grey) !important;
-}
-.nav-link:hover {
-  color: var(--grey);
-}
-
-nav .nav-link {
-  font-size: var(--semi-medium-fs);
-  text-decoration: none;
-}
-
-/*========== Footer Styles===========*/
-
-footer {
-  background-color: var(--mid-black);
-  color: var(--soft-grey);
-}
-footer ul li a {
-  color: var(--soft-grey);
-}
-
-/*====== 4. Tab content styles ================*/
+/*====== 5. Tab content styles ================*/
 
 ul {
   padding: 0;
@@ -281,7 +286,7 @@ ul.tabs li.current {
   display: inherit;
 }
 
-/*================== 5. Card styles ============================*/
+/*================== 5. houses card styles ============================*/
 
 .card {
   width: 200px;
