@@ -145,7 +145,6 @@ h6 {
 }
 
 .hero-section {
-  font-family: "Archivo Black", sans-serif;
   font-weight: 700 !important;
   font-style: normal;
 }
@@ -167,13 +166,25 @@ h6 {
 }
 
 h1 {
-  font-size: var(--large-fs);
+
+  font-size: var(--semi-large-fs);
   color: var(--grey);
+}
+
+
+@media (min-width: 800px) {
+
+h1 {
+  font-size: var(--large-fs);
+}
+
 }
 
 h2 {
   font-size: var(--semi-large-fs);
 }
+
+
 
 @media (min-width: 800px) {
   h2 {
