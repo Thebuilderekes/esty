@@ -1,16 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const tabLinks = document.querySelectorAll("ul.tabs li");
 
-  tabLinks.forEach(function(tabLink) {
-    tabLink.addEventListener("click", function() {
+  tabLinks.forEach(function (tabLink) {
+    tabLink.addEventListener("click", function () {
       const tabId = tabLink.dataset.tab;
       const tabLinks = document.querySelectorAll("ul.tabs li");
       const tabContents = document.querySelectorAll(".tab-content");
 
-      tabLinks.forEach(function(link) {
+      tabLinks.forEach(function (link) {
         link.classList.remove("current");
       });
-      tabContents.forEach(function(content) {
+      tabContents.forEach(function (content) {
         content.classList.remove("current");
       });
 
