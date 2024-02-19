@@ -68,7 +68,7 @@
  
   .card-title {
     font-size: var(--medium-fs);
-    /* margin-bottom: 5px; */
+    font-family: 'Archivo Black', sans-serif;
   }
   
   .card-address,
@@ -88,7 +88,6 @@
   
   .contact-button {
     display: inline-block;
-    padding: var(--small-spacing) 15px;
     background-color: #333;
     color: #fff;
     text-decoration: none;

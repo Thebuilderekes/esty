@@ -16,6 +16,9 @@ Version: 1.0
 */
 
 /*=========== 1.Reset Styles ========*/
+
+
+
 *{
     padding:0;
     margin:0;
@@ -23,10 +26,6 @@ Version: 1.0
     list-style: none;
 
 }
-
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
 
 html {
     width:100%;
@@ -38,7 +37,8 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
+
+    /* font-family: 'Inter', sans-serif; */
     
   }
   /*
@@ -86,7 +86,7 @@ body {
 --soft-grey: #c9c9c9;
 --mid-black: #000000;
 --blue: #07058d;
---light-blue: #b4c7f3;
+--lightblue: #d1dcf4;
 
 /*==================Spacing============================*/
 
@@ -97,58 +97,64 @@ body {
 }
 
 /*================== 3. General Styles ============================*/
-
-.bg-grey{ 
-  background-color: var(--grey)
-};
-.bg-soft-grey{ 
-  background-color: var(--soft-grey)
-};
-.bg-mid-black{ 
-  background-color: var(--mid-black)
-};
-.bg-blue{
-   background-color: var(--blue)
-};
-.bg-light-blue{ 
-  background-color: var(--light-blue)
-};
-
-.text-clr-soft-grey{ 
-  background-color: var(--grey)
-};
-.text-clr-grey{ 
-  background-color: var(--soft-grey)
-};
-.text-clr-black{ 
-  background-color: var(--mid-black)
-};
-.text-clr-blue{
-   background-color: var(--blue)
-};
-.text-clr-light-blue{ 
-  background-color: var(--light-blue)
-};
-
-h1 {
-  font-weight: 700;
-}
-
-h2 {
- font-size: var(--semi-large-fs);
-  
-}
-
-@media(min-width: 800px){
-h2 {
-  font-size: var(--large-fs);
- }
-}
-
 .container{
   max-width: 800px;
   margin: 0 auto;
 }
+
+/* background colors */
+.bg-grey{ 
+  background-color: var(--grey);
+};
+.bg-soft-grey{ 
+  background-color: var(--soft-grey);
+};
+.bg-mid-black{ 
+  background-color: var(--mid-black);
+};
+.bg-blue{
+   background-color: var(--blue);
+};
+.bg-lightblue{ 
+  background-color: var(--lightblue);
+};
+
+
+/* text colors */
+.text-clr-soft-grey{ 
+  background-color: var(--grey);
+};
+.text-clr-grey{ 
+  background-color: var(--soft-grey);
+};
+.text-clr-black{ 
+  background-color: var(--mid-black);
+};
+.text-clr-blue{
+   background-color: var(--blue);
+};
+.text-clr-light-blue{ 
+  background-color: var(--lightblue);
+};
+
+
+/* heading styles */
+.hero-section{
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Archivo Black', sans-serif; 
+}
+
+
+
 
 /*======= Navigation Styles ==========*/
 
@@ -173,18 +179,33 @@ nav .nav-link {
 
 }
 
+
+.featured-apartments-section {
+  background-color: var(--lightblue);
+}
 /*========== Footer Styles===========*/
 
 footer {
   background-color: var(--mid-black);
   color:var(--soft-grey);
 }
+
+footer h3, footer h6 {
+  font-family: 'Archivo Black', sans-serif;
+
+}
 footer ul li a { 
   color:var(--soft-grey);
+  
 }
 
 
 /*====== 4. Tab content styles ================*/
+
+.img-bg {
+  background-image: url(../assets/images/blue-lines-bg.jpeg);
+  background-size: cover
+}
 
 ul{
   padding:0;
@@ -220,14 +241,16 @@ ul.tabs li{
 }
 
 ul.tabs li.current{
-    background: var(--soft-grey);
-    color: var(--blue);
-    padding: var(--small-spacing);
+  background-image: url(../assets/images/blue-lines-bg.jpeg);
+  background-size: cover;
+  color: var(--grey);
+  padding: var(--small-spacing);
 }
 
 .tab-content{
     display: none;
-    background: var(--soft-grey);
+    background-image: url(../assets/images/blue-lines-bg.jpeg);
+    background-size: cover;
     padding: 15px;
 }
 
