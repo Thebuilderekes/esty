@@ -2,6 +2,36 @@
   cursor: pointer;
 }
 
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* 
+.fade-out {
+  opacity: 1;
+  animation: fadeOutAnimation 0.5s ease forwards;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+} */
+
+
 /* image full container styles */
 
 .img-full-container {
@@ -30,6 +60,15 @@
   right: 0;
   top: 0;
   z-index: 999998;
+}
+
+.img-grid img {
+
+  transition: filter 0.3s ease;
+}
+
+.img-grid img:hover {
+  filter: brightness(1.2); /* Increase brightness on hover */
 }
 
 .img-full-container .close {

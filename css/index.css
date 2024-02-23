@@ -185,9 +185,6 @@ footer ul li a {
   color: var(--soft-grey);
 }
 
-
-
-
 /*====== 4. Hero section styles ================*/
 .hero-section {
   font-weight: 700 !important;
@@ -210,32 +207,26 @@ footer ul li a {
   background-repeat: no-repeat;
 }
 
-h1 {
-
+.home__h1 {
   font-size: var(--semi-large-fs);
   color: var(--grey);
 }
 
-
 @media (min-width: 800px) {
-
-h1 {
-  font-size: var(--large-fs);
-}
-
+  .home__h1 {
+    font-size: var(--large-fs);
+  }
 }
 
 h2 {
   font-size: var(--semi-large-fs);
 }
 
-
 @media (min-width: 800px) {
   h2 {
     font-size: var(--large-fs);
   }
 }
-
 
 /*====== 5. Tab content styles ================*/
 
@@ -296,7 +287,6 @@ ul.tabs li.current {
   overflow: hidden;
   position: relative;
 }
-
 
 .card a:hover {
   background-color: var(--mid-black);
