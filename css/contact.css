@@ -62,7 +62,6 @@ h2 {
   font-size: var(--medium-fs);
   font-weight: 900;
   color: var(--grey);
-  line-height: 1.5;
 }
 
 @media (min-width: 900px) {
