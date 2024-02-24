@@ -5,7 +5,6 @@ const expandElements = document.querySelectorAll(".expand");
 expandElements.forEach(function (element) {
   element.addEventListener("click", function (event) {
     event.preventDefault();
-    console.time('clickTime');
     const link = element.src || element.href; // Get the link from either src or href attribute
     const altText = element.alt || ""; // Get the alt text
 
@@ -17,18 +16,12 @@ expandElements.forEach(function (element) {
     // Set the image source within the container
     imgFullContainer.querySelector("img").src = link;
     imgFullContainer.querySelector("img").alt = altText;
-    console.timeEnd('clickTime');
   });
 });
 
 // Close preview on click of the full image container
 const imgFullContainer = document.querySelector(".img-full-container");
 imgFullContainer.addEventListener("click", function () {
-  imgFullContainer.classList.add("fade-out"); // Apply fade-out class
-
-  setTimeout(function () {
-    // After a delay, completely hide the container
-    imgFullContainer.style.display = "none";
-    imgFullContainer.querySelector("img").src = ""; // Clear the image source
-  }, 1000);
+  imgFullContainer.style.display = "none";
+  imgFullContainer.querySelector("img").src = ""; // Clear the image source
 });

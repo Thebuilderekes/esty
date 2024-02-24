@@ -74,23 +74,28 @@
         <picture class="col-12 d-flex justify-content-center container">
           <source
             width="900"
-            src="../../assets/images/house-images/desktop-optimised/house1.jpeg"
+            srcset="
+              ../../assets/images/house-images/desktop-optimised/house1.jpeg
+            "
             media="(min-width: 1000px)"
           />
           <source
-            src="../../assets/images/house-images/desktop-optimised/house1.jpeg"
+            srcset="
+              ../../assets/images/house-images/desktop-optimised/house1.jpeg
+            "
             media="(max-width: 800px)"
           />
           <source
-            src="../../assets/images/house-images/desktop-optimised/house1.jpeg"
+            srcset="
+              ../../assets/images/house-images/desktop-optimised/house1.jpeg
+            "
             media="(max-width: 500px)"
           />
           <img
             class="expand"
             width="900"
-            class="expand"
             src="../../assets/images/house-images/desktop-optimised/house1.jpeg"
-            alt="image of room"
+            alt="room image"
           />
         </picture>
 
@@ -122,35 +127,8 @@
               <img
                 class="expand"
                 width="300"
-                class="expand"
                 src="../../assets/images/room-images/mobile-optimised/room1.jpg"
-                alt="image of room"
-              />
-            </picture>
-          </li>
-          <li class="col-3">
-            <picture
-              class="border border-3 border-primary border border-1-blue d-flex justify-content-center"
-            >
-              <source
-                width="800"
-                src="../../assets/images/room-images/mobile-optimised/room2.jpg"
-                media="(min-width: 1000px)"
-              />
-              <source
-                src="../../assets/images/room-images/mobile-optimised/room2.jpg"
-                media="(max-width: 800px)"
-              />
-              <source
-                src="../../assets/images/room-images/mobile-optimised/room2.jpg"
-                media="(max-width: 500px)"
-              />
-              <img
-                class="expand"
-                width="200"
-                class="expand"
-                src="../../assets/images/room-images/mobile-optimised/room2.jpg"
-                alt="image of room"
+                alt="room image"
               />
             </picture>
           </li>
@@ -161,6 +139,37 @@
               <source
                 width="800"
                 srcset="
+                  ../../assets/images/room-images/mobile-optimised/room2.jpg
+                "
+                media="(min-width: 1000px)"
+              />
+              <source
+                srcset="
+                  ../../assets/images/room-images/mobile-optimised/room2.jpg
+                "
+                media="(max-width: 800px)"
+              />
+              <source
+                srcset="
+                  ../../assets/images/room-images/mobile-optimised/room2.jpg
+                "
+                media="(max-width: 500px)"
+              />
+              <img
+                class="expand"
+                width="200"
+                src="../../assets/images/room-images/mobile-optimised/room2.jpg"
+                alt="room image"
+              />
+            </picture>
+          </li>
+          <li class="col-3">
+            <picture
+              class="border border-3 border-primary border border-1-blue d-flex justify-content-center"
+            >
+              <source
+                width="800"
+                srcset="
                   ../../assets/images/room-images/mobile-optimised/room3.jpg
                 "
                 media="(min-width: 1000px)"
@@ -180,9 +189,8 @@
               <img
                 class="expand"
                 width="200"
-                class="expand"
                 src="../../assets/images/room-images/mobile-optimised/room3.jpg"
-                alt="image of room"
+                alt="room image"
               />
             </picture>
           </li>
@@ -212,9 +220,8 @@
               <img
                 class="expand"
                 width="200"
-                class="expand"
                 src="../../assets/images/room-images/mobile-optimised/room1.jpg"
-                alt="image of room"
+                alt="room image"
               />
             </picture>
           </li>
@@ -222,7 +229,7 @@
 
         <div class="hero-img__container">
           <div class="img-full-container">
-            <img src="" alt="beautiful" />
+            <img src="#" alt="beautiful" />
             <button class="close">Close</button>
           </div>
         </div>
@@ -278,13 +285,17 @@
                 <a href="#" class="text-decoration-none">Home</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="text-decoration-none">About</a>
+                <a href="/pages/about.html" class="text-decoration-none"
+                  >About</a
+                >
               </li>
               <li class="mb-2">
                 <a href="#" class="text-decoration-none">Pricing</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="text-decoration-none">Contact us</a>
+                <a href="/pages/contact.html" class="text-decoration-none"
+                  >Contact us</a
+                >
               </li>
             </ul>
           </div>
@@ -328,7 +339,7 @@
       </div>
 
       <!-- Copyrights -->
-      <div class="py-4">
+      <div class="pt-4">
         <div class="container text-center">
           <p class="mb-0 py-2">© 2024 Rent a place. All rights reserved</p>
         </div>

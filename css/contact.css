@@ -2,7 +2,6 @@ body {
   background-color: var(--grey);
 }
 
-
 .contact-us__section {
   margin-top: var(--medium-spacing);
   margin-bottom: var(--extra-large-spacing);
@@ -37,11 +36,11 @@ body {
   padding: var(--medium-spacing);
 }
 
-@media (min-width: 900px){
-    .content {
-        margin: var(--large-spacing) var(--extra-large-spacing);
-        padding: var(--extra-large-spacing);   
-    }
+@media (min-width: 900px) {
+  .content {
+    margin: var(--large-spacing) var(--extra-large-spacing);
+    padding: var(--extra-large-spacing);
+  }
 }
 
 h1 {
@@ -80,5 +79,5 @@ h2 {
   .form__wrapper {
     margin-top: var(--large-spacing);
     width: 60%;
-  } 
+  }
 }

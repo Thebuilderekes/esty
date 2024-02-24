@@ -1,0 +1,79 @@
+/*====== 4. Hero section styles ================*/
+.hero-section {
+  font-weight: 700 !important;
+  font-style: normal;
+}
+
+.hero-section .hero-section__img-background {
+  width: 100%;
+  height: 30vh;
+
+  background-image: linear-gradient(
+      to bottom right,
+      #000 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      transparent 100%
+    ),
+    url("../assets/images/house-images/desktop-optimised/about-page-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home__h1 {
+  font-size: var(--semi-large-fs);
+  font-weight: 700;
+  color: var(--grey);
+}
+
+@media (min-width: 800px) {
+  .home__h1 {
+    font-size: var(--large-fs);
+  }
+}
+
+.about-us__section {
+  background-color: var(--grey);
+  margin: var(--large-spacing) var(--semi-medium-spacing);
+  padding: var(--small-spacing);
+  border: 1px solid var(--light-blue);
+}
+
+@media (min-width: 800px) {
+  .about-us__section {
+    padding: var(--large-spacing);
+  }
+}
+
+.home__h2 {
+  font-size: var(--semi-medium-fs);
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .home__h2 {
+    font-size: var(--semi-large-fs);
+  }
+}
+
+.home__h3 {
+  font-size: var(--semi-medium-fs);
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .home__h3 {
+    font-size: var(--semi-large-fs);
+  }
+}
+
+p {
+  font-size: var(--small-fs);
+  margin-bottom: var(--large-spacing);
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: var(--medium-fs);
+  }
+}
