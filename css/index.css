@@ -99,10 +99,10 @@ h6 {
   /*==================Colors============================*/
 
   --grey: #f3efef;
-  --soft-grey: #f3f3f3;
+  --soft-grey: #fffbfb;
   --mid-black: #000000;
   --blue: #07058d;
-  --light-blue: #b4c7f3;
+  --light-blue: #c6d6fc;
 
   /*==================Spacing============================*/
 
@@ -284,9 +284,9 @@ ul.tabs li.current {
 
 .card {
   width: 200px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  position: relative;
+  background-color: var(--grey);
+  /* border: 1px solid #ccc; */
+  
 }
 
 .card a:hover {
@@ -295,7 +295,6 @@ ul.tabs li.current {
 
 .card img {
   width: 100%;
-  height: auto;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -303,6 +302,3 @@ ul.tabs li.current {
   transform: scale(1.1);
 }
 
-.card .card-body {
-  background-color: var(--grey);
-}
