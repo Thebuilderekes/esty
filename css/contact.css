@@ -39,7 +39,7 @@ body {
 @media (min-width: 900px) {
   .content {
     margin: var(--large-spacing) var(--extra-large-spacing);
-    padding: var(--extra-large-spacing);
+    padding: var(--large-spacing);
   }
 }
 

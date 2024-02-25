@@ -286,7 +286,6 @@ ul.tabs li.current {
   width: 200px;
   background-color: var(--grey);
   /* border: 1px solid #ccc; */
-  
 }
 
 .card a:hover {
@@ -301,4 +300,3 @@ ul.tabs li.current {
 .card img:hover {
   transform: scale(1.1);
 }
-

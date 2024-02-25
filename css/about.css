@@ -21,12 +21,10 @@
 }
 
 @media (min-width: 800px) {
-    .hero-section .hero-section__img-background {
-        height: 30vh;
-
-    }
+  .hero-section .hero-section__img-background {
+    height: 30vh;
+  }
 }
-
 
 .home__h1 {
   font-size: var(--semi-large-fs);
@@ -41,10 +39,8 @@
 }
 
 .about-us__section {
-
   margin: var(--large-spacing) var(--small-spacing);
   padding: var(--small-spacing);
-
 }
 
 @media (min-width: 800px) {
@@ -53,31 +49,29 @@
   }
 }
 
-.who-we-are{
-    padding: var(--medium-spacing);
-    margin-bottom: var(--large-spacing); 
-    border: 1px solid var(--light-blue);
-    background-color: var(--grey);
-    border-radius: 20px;
+.who-we-are {
+  padding: var(--medium-spacing);
+  margin-bottom: var(--large-spacing);
+  border: 1px solid var(--light-blue);
+  background-color: var(--grey);
+  border-radius: 20px;
 }
 
-.core-values{
-    padding: var(--medium-spacing);
-    background-color: var(--light-blue);
-    border-radius: 20px;
+.core-values {
+  padding: var(--medium-spacing);
+  background-color: var(--light-blue);
+  border-radius: 20px;
 }
 
 @media (min-width: 800px) {
-
-    .who-we-are {
-        margin-bottom: var(--extra-large-spacing); 
-    }
-    .who-we-are, .core-values  {
-
-    padding: var(--large-spacing);  
+  .who-we-are {
+    margin-bottom: var(--extra-large-spacing);
+  }
+  .who-we-are,
+  .core-values {
+    padding: var(--large-spacing);
+  }
 }
-}
-
 
 .home__h2 {
   font-size: var(--semi-medium-fs);
@@ -107,7 +101,7 @@ section p {
 }
 
 @media (min-width: 800px) {
-    section p  {
+  section p {
     font-size: var(--medium-fs);
   }
 }
