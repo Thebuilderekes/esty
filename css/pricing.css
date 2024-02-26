@@ -1,0 +1,65 @@
+html {
+  font-size: var(--small-fs);
+}
+@media (min-width: 768px) {
+  html {
+    font-size: var(--default-fs);
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing__section {
+  max-width: 700px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-size: var(--semi-medium-fs);
+}
+
+.card {
+  width: 200px;
+}
+
+.card-header h2 {
+  font-weight: 700;
+}
+  .card-deck {
+  gap: var(--medium-spacing);
+}
+.card-body {
+  color: var(--mid-black);
+  background: var(--light-blue);
+}
+
+.card .card-body ul li {
+  padding: var(--small-spacing) 0;
+  font-size: var(--small-fs);
+}
+
+.card .card-body button {
+  background-color: var(--blue);
+  color: var(--grey);
+}
+
+.card .card-body button:hover {
+  background-color: var(--mid-black);
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
