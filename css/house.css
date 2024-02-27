@@ -86,8 +86,7 @@
   /* margin-bottom: 5px; */
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
  
   .card-title {
     font-size: var(--medium-fs);
@@ -99,22 +98,15 @@
     font-size: var(--semi-medium-fs);
     /* font-weight: 700; */
     margin-bottom: 5px;
-  
-=======
-=======
+  }
+
 @media (min-width: 900px) {
   .card-title {
     font-size: var(--medium-fs);
   }
 }
 
->>>>>>> b234154cbe29be3224a882ed69dfc26bad7639db
-.card-address,
-.card-price {
-  font-size: var(--small-fs);
-  margin-bottom: 5px;
-}
->>>>>>> e8f5c728de9112d52b17c85d5d51dd35beac91ae
+
 
 @media (min-width: 900px) {
   .card-price {
@@ -140,8 +132,7 @@ dl {
 
 @media (min-width: 900px) {
   .contact-button {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     display: inline-block;
     background-color: #333;
     color: #fff;
@@ -150,15 +141,9 @@ dl {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-=======
     font-size: var(--small-fs);
->>>>>>> e8f5c728de9112d52b17c85d5d51dd35beac91ae
-=======
-    font-size: var(--semi-medium-fs);
->>>>>>> b234154cbe29be3224a882ed69dfc26bad7639db
-  }
+
+
 }
 
-.contact-button:hover {
-  background-color: #444;
 }
