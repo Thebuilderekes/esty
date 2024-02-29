@@ -75,13 +75,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-/*
-    Create a root stacking context
-  */
-#root,
-#__next {
-  isolation: isolate;
-}
 
 /*======== 2. CSS variables ==============*/
 
@@ -102,6 +95,7 @@ h6 {
   --soft-grey: #fffbfb;
   --mid-black: #000000;
   --blue: #07058d;
+  --mid-blue: #312ef3;
   --light-blue: #c6d6fc;
 
   /*==================Spacing============================*/
@@ -130,6 +124,9 @@ h6 {
 .bg-light-blue {
   background-color: var(--light-blue);
 }
+.bg-mid-blue {
+  background-color: var(--mid-blue);
+}
 
 .text-clr-soft-grey {
   background-color: var(--grey);
@@ -156,8 +153,15 @@ h6 {
 
 nav ul li a {
   cursor: pointer;
-
+  color: var(--grey) !important;
   text-decoration: none;
+}
+nav ul li a:hover {
+  color: var(--light-blue) !important;
+}
+nav ul li .rounded-pill:hover {
+  color: var(--grey) !important;
+  background-color: var(--mid-blue);
 }
 
 .nav-link-light {
@@ -289,6 +293,10 @@ ul.tabs li.current {
 }
 
 .card a:hover {
+  background-color: var(--mid-blue);
+}
+
+.card a:focus {
   background-color: var(--mid-black);
 }
 

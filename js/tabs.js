@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const tabLinks = document.querySelectorAll("ul.tabs li");
+  const tabLinks = document.querySelectorAll(".tab-link");
+  const tabContents = document.querySelectorAll(".tab-content");
 
   tabLinks.forEach(function (tabLink) {
     tabLink.addEventListener("click", function () {
@@ -14,8 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
         content.classList.remove("current");
       });
 
+      tabLink.addEventListener("focus", handleTabFocus);
+      tabLink.addEventListener("keydown", handleKeyDown);
+
       tabLink.classList.add("current");
       document.getElementById(tabId).classList.add("current");
     });
   });
+
+  // tab through and display corresponding content whenever you press enter on the focused tab
+
+  tabLinks.forEach((tabLink) => {
+    tabLink.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        const targetId = tabLink.dataset.tab;
+        const targetContent = document.getElementById(targetId);
+        showTabContent(targetContent);
+      }
+    });
+  });
+
+  function showTabContent(tabContent) {
+    tabContents.forEach((content) => {
+      content.classList.remove("current");
+    });
+    tabContent.classList.add("current");
+  }
 });

@@ -38,8 +38,8 @@ body {
 
 @media (min-width: 900px) {
   .content {
-    margin: var(--large-spacing) var(--extra-large-spacing);
-    padding: var(--large-spacing);
+    margin: var(--medium-spacing) var(--extra-large-spacing);
+    padding: var(--medium-spacing);
   }
 }
 
@@ -77,7 +77,7 @@ h2 {
 
 @media (min-width: 900px) {
   .form__wrapper {
-    margin-top: var(--large-spacing);
+    margin-top: var(--medium-spacing);
     width: 60%;
   }
 }

@@ -1,71 +1,15 @@
-.house-section li img {
-  cursor: pointer;
-}
+/* CSS Index
+---------------------------------------
+1. carousel styles
+2. contact card styles
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 0.5s ease forwards;
-}
+*/
 
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* carousel styles */
 
-/* image full container styles */
-
-.img-full-container {
-  position: fixed;
-  z-index: 999997;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: var(--small-spacing);
-  border-radius: 5px;
-  text-align: center;
-  display: none;
-  cursor: pointer;
-}
-
-.img-full-container img {
-  max-width: 100%;
-  max-height: 100%;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999998;
-}
-
-.img-grid img {
-  transition: filter 0.3s ease;
-}
-
-.img-grid img:hover {
-  filter: brightness(1.2); /* Increase brightness on hover */
-}
-
-.img-full-container .close {
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  color: #fff;
-  font-size: var(--medium-fs);
-  background-color: #1b1818;
-  padding: 0.5em;
-  width: 100%;
-  z-index: 999999;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--mid-black);
 }
 
 /* contact card styles */

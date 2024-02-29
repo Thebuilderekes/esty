@@ -31,7 +31,7 @@ h3 {
 .card-header h2 {
   font-weight: 700;
 }
-  .card-deck {
+.card-deck {
   gap: var(--medium-spacing);
 }
 .card-body {
