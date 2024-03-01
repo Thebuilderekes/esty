@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         content.classList.remove("current");
       });
 
-      tabLink.addEventListener("focus", handleTabFocus);
-      tabLink.addEventListener("keydown", handleKeyDown);
+      // tabLink.addEventListener("focus", handleTabFocus);
+      // tabLink.addEventListener("keydown", handleKeyDown);
 
       tabLink.classList.add("current");
       document.getElementById(tabId).classList.add("current");
@@ -28,8 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
   tabLinks.forEach((tabLink) => {
     tabLink.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
+      const tabId = tabLink.dataset.tab;
         const targetId = tabLink.dataset.tab;
         const targetContent = document.getElementById(targetId);
+        tabLinks.forEach(function (link) {
+          link.classList.remove("current");
+        });
+        tabContents.forEach(function (content) {
+          content.classList.remove("current");
+        });
+
+        tabLink.classList.add("current");
+        document.getElementById(tabId).classList.add("current");
         showTabContent(targetContent);
       }
     });
@@ -41,4 +51,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     tabContent.classList.add("current");
   }
-});
+ });
