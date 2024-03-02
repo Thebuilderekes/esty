@@ -1,11 +1,13 @@
 /* CSS Index
 ---------------------------------------
-1. Hero section styles 
-2. about us section styles
+1. HERO SECTION CSS
+2. ABOUT US CSS
 
 */
 
-/*====== 1. Hero section styles ================*/
+/*********************************************/
+/*             1. HERO SECTION CSS                 "/
+/*********************************************/
 .hero-section {
   font-weight: 700 !important;
   font-style: normal;
@@ -45,7 +47,9 @@
   }
 }
 
-/*====== 2. about us section styles ================*/
+/*********************************************/
+/*             2. ABOUT SECTION CSS                 "/
+/*********************************************/
 
 .about-us__section {
   margin: var(--large-spacing) var(--small-spacing);

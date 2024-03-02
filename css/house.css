@@ -1,18 +1,22 @@
 /* CSS Index
 ---------------------------------------
-1. carousel styles
-2. contact card styles
+1. CAROUSEL CSS
+2. CARDS CSS
 
 */
 
-/* carousel styles */
+/*********************************************/
+/*              CAROUSEL CSS                  "/
+/*********************************************/
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: var(--mid-black);
 }
 
-/* contact card styles */
+/*********************************************/
+/*              CARDS CSS - HOUSE PAGE        "/
+/*********************************************/
 
 .contact-card {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -27,7 +31,6 @@
 
 .card-title {
   font-size: var(--semi-medium-fs);
-  /* margin-bottom: 5px; */
 }
 
 @media (min-width: 900px) {

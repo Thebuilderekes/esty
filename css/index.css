@@ -8,15 +8,21 @@ Version: 1.0
 
 /* CSS Index
 ---------------------------------------
-1. Reset styles
-2. CSS variables
-3. General styles
-4. Hero section styles
-5. Tab content styles
-6. Card styles
+1. RESET CSS
+2. VARIABLES CSS
+3. UTILITY CSS
+4. NAVBAR CSS
+5. HERO SECTION
+6. TAB CONTENT
+7. CARDS CSS - HOME PAGE
+8. FOOTER CSS 
 */
 
-/*=========== 1.Reset Styles ========*/
+
+/*********************************************/
+/*              RESET CSS                  "/
+/*********************************************/
+
 * {
   padding: 0;
   margin: 0;
@@ -76,7 +82,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/*======== 2. CSS variables ==============*/
+
+/*********************************************/
+/*              2. VARIABLES CSS                  "/
+/*********************************************/
+
 
 :root {
   /*==================Font size============================*/
@@ -108,7 +118,9 @@ h6 {
   --small-spacing: 0.625rem; /*10px*/
 }
 
-/*================== 3. General Styles ============================*/
+/*********************************************/
+/*              3. UTILITY CSS                  "/
+/*********************************************/
 
 .bg-grey {
   background-color: var(--grey);
@@ -150,7 +162,9 @@ h6 {
   margin: 0 auto;
 }
 
-/*======= Navigation Styles ==========*/
+/*********************************************/
+/*              4. NAVBAR CSS                  "/
+/*********************************************/
 
 nav ul li a {
   cursor: pointer;
@@ -181,17 +195,11 @@ nav .nav-link {
   text-decoration: none;
 }
 
-/*========== Footer Styles===========*/
 
-footer {
-  background-color: var(--mid-black);
-  color: var(--soft-grey);
-}
-footer ul li a {
-  color: var(--soft-grey);
-}
 
-/*====== 4. Hero section styles ================*/
+/*********************************************/
+/*              5. HERO SECTION CSS              "/
+/*********************************************/
 .hero-section {
   font-weight: 700 !important;
   font-style: normal;
@@ -234,8 +242,9 @@ h2 {
   }
 }
 
-/*====== 5. Tab content styles ================*/
-
+/*********************************************/
+/*       6. TAB CONTENT CSS                  "/
+/*********************************************/
 
 ul {
   padding: 0;
@@ -243,11 +252,10 @@ ul {
 .nav-tabs .nav-link {
   font-size: var(--small-fs);
   color: var(--mid-black) !important;
-  padding: 5px 10px;
+  padding: 10px 10px;
 }
 
-
-@media (min-width: 800px){
+@media (min-width: 800px) {
   .nav-tabs .nav-link {
     font-size: var(--medium-fs);
     color: var(--mid-black) !important;
@@ -259,8 +267,9 @@ ul {
   color: var(--grey) !important;
 }
 
-
-/*================== 5. houses card styles ============================*/
+/*********************************************/
+/*      7. CARDS CSS - HOME PAGE  "/
+/*********************************************/
 
 .card {
   width: 200px;
@@ -278,9 +287,17 @@ ul {
 
 .card img {
   width: 100%;
-  transition: transform 0.6s ease-in-out;
 }
 
-.card img:hover {
-  transform: scale(1.1);
+
+/*********************************************/
+/*       8. FOOTER CSS                  "/
+/*********************************************/
+
+footer {
+  background-color: var(--mid-black);
+  color: var(--soft-grey);
+}
+footer ul li a {
+  color: var(--soft-grey);
 }
