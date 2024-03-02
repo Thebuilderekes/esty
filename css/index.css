@@ -92,17 +92,18 @@ h6 {
   /*==================Colors============================*/
 
   --grey: #f3efef;
-  --soft-grey: #fffbfb;
+  --soft-grey: #cac9c9;
   --mid-black: #000000;
   --blue: #07058d;
   --mid-blue: #312ef3;
   --light-blue: #c6d6fc;
+  --light-gold: #f1ddaa;
 
   /*==================Spacing============================*/
 
   --extra-large-spacing: 7.5rem; /*120px*/
   --large-spacing: 3.125rem; /*50px*/
-  --semi-medium-spacing: 2rem /*32px*/;
+  --semi-medium-spacing: 2rem; /*32px*/
   --medium-spacing: 1.25rem; /*20px*/
   --small-spacing: 0.625rem; /*10px*/
 }
@@ -235,54 +236,29 @@ h2 {
 
 /*====== 5. Tab content styles ================*/
 
+
 ul {
   padding: 0;
 }
-
-ul.tabs {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-ul.tabs li {
-  font-size: var(--semi-medium-fs);
-  font-weight: 700;
-  display: flex;
-  background: none;
-  display: inline-block;
-  padding: var(--small-spacing) 0;
-  cursor: pointer;
+.nav-tabs .nav-link {
+  font-size: var(--small-fs);
+  color: var(--mid-black) !important;
+  padding: 5px 10px;
 }
 
-@media (min-width: 900px) {
-  ul.tabs li {
+
+@media (min-width: 800px){
+  .nav-tabs .nav-link {
     font-size: var(--medium-fs);
+    color: var(--mid-black) !important;
   }
 }
 
-.tab-content li .card {
-  flex-grow: 1;
-}
-.tab-content li .card a {
-  font-weight: 700;
+.nav-link.active {
+  background-color: var(--blue) !important;
+  color: var(--grey) !important;
 }
 
-ul.tabs li.current {
-  border: 1px solid var(--mid-blue);
-  background: var(--soft-grey);
-  color: var(--blue);
-  padding: var(--small-spacing);
-}
-
-.tab-content {
-  display: none;
-  background: var(--soft-grey);
-  padding: 15px;
-}
-
-.tab-content.current {
-  display: inherit;
-}
 
 /*================== 5. houses card styles ============================*/
 

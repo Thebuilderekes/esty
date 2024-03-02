@@ -50,7 +50,7 @@ h3 {
 }
 
 .card .card-body button:hover {
-  background-color: var(--mid-black);
+  background-color: var(--mid-blue);
 }
 
 .border-top {

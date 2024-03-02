@@ -61,7 +61,7 @@
 .who-we-are {
   padding: var(--medium-spacing);
   margin-bottom: var(--large-spacing);
-  border: 1px solid var(--light-blue);
+  border: 1px solid var(--light-gold);
   background-color: var(--grey);
   border-radius: 20px;
 }
