@@ -14,7 +14,7 @@ Version: 1.0
 4. NAVBAR CSS
 5. HERO SECTION
 6. TAB CONTENT
-7. CARDS CSS - HOME PAGE
+7. house-cardS CSS - HOME PAGE
 8. FOOTER CSS 
 */
 
@@ -28,8 +28,11 @@ Version: 1.0
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
-
+  a {
+    text-decoration: none !important;
+  }
 *,
 *::before,
 *::after {
@@ -141,20 +144,36 @@ h6 {
   background-color: var(--mid-blue);
 }
 
+.text-bg-soft-grey {
+  background-color: var(--grey);
+}
+.text-bg-grey {
+  background-color: var(--soft-grey);
+}
+.text-bg-black {
+  background-color: var(--mid-black);
+}
+.text-bg-blue {
+  background-color: var(--blue);
+}
+.text-bg-light-blue {
+  background-color: var(--light-blue);
+}
+
 .text-clr-soft-grey {
   background-color: var(--grey);
 }
 .text-clr-grey {
-  background-color: var(--soft-grey);
+  color: var(--soft-grey);
 }
 .text-clr-black {
-  background-color: var(--mid-black);
+  color: var(--mid-black);
 }
 .text-clr-blue {
-  background-color: var(--blue);
+  color: var(--blue);
 }
 .text-clr-light-blue {
-  background-color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 .container {
@@ -191,10 +210,9 @@ nav ul li .rounded-pill:hover {
 }
 
 nav .nav-link {
-  font-size: var(--semi-medium-fs);
+  font-size: var(--default-fs);
   text-decoration: none;
 }
-
 
 
 /*********************************************/
@@ -245,6 +263,9 @@ h2 {
 /*********************************************/
 /*       6. TAB CONTENT CSS                  "/
 /*********************************************/
+nav ul li a {
+  text-transform: uppercase;
+}
 
 ul {
   padding: 0;
@@ -268,33 +289,38 @@ ul {
 }
 
 /*********************************************/
-/*      7. CARDS CSS - HOME PAGE  "/
+/*      7. house-cardS CSS - HOME PAGE  "/
 /*********************************************/
 
-.card {
+.house-card {
   width: 200px;
   background-color: var(--grey);
   /* border: 1px solid #ccc; */
 }
 
-.card a:hover {
+.house-card a:hover {
   background-color: var(--mid-blue);
 }
 
-.card a:focus {
+.house-card a:focus {
   background-color: var(--mid-black);
 }
-
-.card ul {
-  display: flex; gap: var(--small-spacing)
+.house-card-img {
+margin-bottom: var(--small-spacing);
 }
 
-.card ul li {
+.house-card ul {
+  display: flex; 
+  gap: var(--small-spacing)
+}
+
+.house-card ul li {
   display: flex;
   align-items: center;
   gap: var(--small-spacing);
 }
-.card li img {
+.house-card li img {
+ 
   width: 15px;
   height: 15px;
 }
