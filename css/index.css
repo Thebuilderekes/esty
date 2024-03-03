@@ -103,13 +103,13 @@ h6 {
   --smallest-fs: 0.75rem; /*12px*/
 
   /*==================Colors============================*/
-
-  --grey: #f3efef;
+  --dark-grey: #54595f;
+  --grey: #fdfdfd;
   --soft-grey: #cac9c9;
-  --mid-black: #000000;
+  --black: #212121;
   --blue: #07058d;
   --mid-blue: #312ef3;
-  --light-blue: #c6d6fc;
+  --light-blue: #dee7fd;
   --light-gold: #f1ddaa;
 
   /*==================Spacing============================*/
@@ -333,7 +333,7 @@ margin-bottom: var(--small-spacing);
 /*********************************************/
 
 footer {
-  background-color: var(--mid-black);
+  background-color: var(--black);
   color: var(--soft-grey);
 }
 footer ul li a {
