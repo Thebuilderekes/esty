@@ -1,4 +1,13 @@
-/*====== 4. Hero section styles ================*/
+/* CSS Index
+---------------------------------------
+1. HERO SECTION CSS
+2. ABOUT US CSS
+
+*/
+
+/*********************************************/
+/*             1. HERO SECTION CSS                 "/
+/*********************************************/
 .hero-section {
   font-weight: 700 !important;
   font-style: normal;
@@ -38,6 +47,10 @@
   }
 }
 
+/*********************************************/
+/*             2. ABOUT SECTION CSS                 "/
+/*********************************************/
+
 .about-us__section {
   margin: var(--large-spacing) var(--small-spacing);
   padding: var(--small-spacing);
@@ -52,15 +65,15 @@
 .who-we-are {
   padding: var(--medium-spacing);
   margin-bottom: var(--large-spacing);
-  border: 1px solid var(--light-blue);
+  border: 1px solid var(--light-gold);
   background-color: var(--grey);
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .core-values {
   padding: var(--medium-spacing);
   background-color: var(--light-blue);
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 @media (min-width: 800px) {
@@ -96,12 +109,17 @@
 }
 
 section p {
+  color: var(  --dark-grey);
   font-size: var(--small-fs);
   margin-bottom: var(--large-spacing);
 }
 
+strong{
+  color: var(--black);
+}
+
 @media (min-width: 800px) {
   section p {
-    font-size: var(--medium-fs);
+    font-size: var(--semi-medium-fs);
   }
 }
