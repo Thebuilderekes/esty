@@ -115,6 +115,11 @@ strong {
 
 /*=======OUR TEAM MEMBERS  CSS============*/
 
+
+.the-team {
+  margin-bottom: var(--extra-large-spacing);
+}
+
 .team-members {
   display: flex;
   justify-content: space-around;
