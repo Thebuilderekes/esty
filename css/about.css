@@ -134,8 +134,8 @@ strong {
 
 @media (min-width: 800px) {
   .team-member img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 
 }
@@ -159,7 +159,7 @@ strong {
 @media (min-width: 800px) {
   .team-member-text {
   font-size: var(--medium-fs);
-  height: 500px;
+  height: 400px;
 
   }
 }
