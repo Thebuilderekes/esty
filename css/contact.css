@@ -5,7 +5,6 @@
 
 */
 
-
 /*********************************************/
 /*              CONTACT US CSS                 "/
 /*********************************************/
@@ -13,8 +12,6 @@
 body {
   background-color: var(--grey);
 }
-
-
 
 .contact-us__section {
   margin-top: var(--medium-spacing);

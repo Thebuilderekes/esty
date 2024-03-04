@@ -16,11 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="../assets/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-  <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 
-  <!-- animate.css CDN-->
+    <!-- animate.css CDN-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -28,7 +31,7 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/about.css" />
   </head>
-  <body>
+  <body class="body-cl">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-black py-3 px-md-3">
       <div class="container-fluid gap-4">
@@ -76,88 +79,128 @@
       </div>
     </nav>
 
-    <main>  
-         <!-- About section -->
-    <section class="hero-section">
-      <div
-        class="row m-0 hero-section__img-background justify-content-center align-items-center md:m-4 mb-0"
-      >
-        <div class="text-center rounded-0 md:rounded-5">
-          <h1 class="home__h1 mb-4 animate__animated animate__fadeInUp">
-            ABOUT US
-          </h1>
+    <main>
+      <!-- About section -->
+      <section class="hero-section">
+        <div
+          class="row m-0 hero-section__img-background justify-content-center align-items-center md:m-4 mb-0"
+        >
+          <div class="text-center rounded-0 md:rounded-5">
+            <h1 class="home__h1 mb-4 animate__animated animate__fadeInUp">
+              ABOUT US
+            </h1>
+          </div>
         </div>
-      </div>
-    </section>
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb ">
-      <ol class="breadcrumb p-2">
-        <li class="breadcrumb-item text-black"><a href="/index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About</li>
-      </ol>
-    </nav>
-          <!-- Who we are - our core values section -->
+      </section>
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb "
+      >
+        <ol class="breadcrumb p-2">
+          <li class="breadcrumb-item text-black">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+      </nav>
+      <!-- Who we are - our core values section -->
       <section
-        class="about-us__section animate__animated animate__fadeIn animate__delay-1s"
+        class="about-us__section section__spacing animate__animated animate__fadeIn animate__delay-1s"
       >
         <article class="who-we-are">
           <h2
-            class="home__h2 py-4 text-center animate__animated animate__fadeIn"
+            class="home__h2 py-5 text-center animate__animated animate__fadeIn"
           >
             WHO WE ARE
           </h2>
-             <div class="flex-p d-block d-md-flex gap-3">
+          <div class="flex-p d-block d-md-flex gap-3">
+            <p>
+              At Rent a place, we're passionate about connecting people with
+              their ideal living spaces. With a deep understanding of the local
+              rental market and a commitment to personalized service, we offer a
+              seamless experience for both tenants and property owners. <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, qui porro odit nesciunt ad necessitatibus corrupti
+              nostrum et pariatur in.
+            </p>
 
-          <p>
-            At Rent a place, we're passionate about connecting people with their
-            ideal living spaces. With a deep understanding of the local rental
-            market and a commitment to personalized service, we offer a seamless
-            experience for both tenants and property owners. <br>  <br>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, qui porro odit nesciunt ad necessitatibus corrupti nostrum et pariatur in. 
-          </p>
-
-          <p>
-            Whether you're
-            searching for a comfortable and convenient apartment, a spacious
-            family home, or the perfect tenant to manage your investment, our
-            team is dedicated to exceeding your expectations.  <br>  <br>  Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Eaque, saepe!, a spacious
-            family home, or the perfect tenant to manage your investment, our
-            team is dedicated to exceeding your expectations. Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Eaque, saepe!
-          </p>
-        </div>
-
+            <p>
+              Whether you're searching for a comfortable and convenient
+              apartment, a spacious family home, or the perfect tenant to manage
+              your investment, our team is dedicated to exceeding your
+              expectations. <br />
+              <br />
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+              saepe!, a spacious family home, or the perfect tenant to manage
+              your investment, our team is dedicated to exceeding your
+              expectations. Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Eaque, saepe!
+            </p>
+          </div>
         </article>
 
+        <section class="the-team mb-5"
+        >
+        <h2 class="home__h2 py-5 text-center"> THE TEAM</h2>
+  
+        <div class="our-team team-members d-flex flex-column gap-5  flex-md-row  d-md-flex  justify-content-md-evenly gap-md-0 mx-auto"
+        >
+          <article class="team-member">
+            <figure>
+              <img src="/assets/images/team/person1.jpg" alt="Team member 1" />
+            </figure>
+            <h3 class="team-member-text">Sarah<br /> <br> Designer</h3>
+          </article>
+          <article class="team-member">
+            <figure>
+              <img src="/assets/images/team/person2.jpg" alt="Team member 2" />
+            </figure>
+            <h3 class="team-member-text">Dave<br /> <br>  Developer</h3>
+          </article>
+          <article class="team-member">
+            <figure>
+              <img src="/assets/images/team/person3.jpg" alt="Team member 3" />
+            </figure>
+            <h3 class="team-member-text">Alice<br /> <br>  Developer</h3>
+          </article>
+        </div>
+        </section>
+
         <article class="core-values">
-          <h3 class="home__h3 py-4 text-center">OUR CORE VALUES</h3>
+          <h2 class="home__h2 py-5  text-center">OUR CORE VALUES</h2>
           <div class="flex-p d-block d-md-flex gap-3">
-          <p>
-            <strong>Responsiveness:</strong> We believe in clear and timely
-            communication, ensuring you always feel informed and supported
-            throughout the rental process. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Similique, doloremque. Blanditiis quas
-            libero dolores maiores nemo corporis minus, sunt id sequi. Ullam
-            deserunt odit non, quae fugit praesentium atque quam!
-          </p>
-          <p>
-            <strong>Quality:</strong> We meticulously manage a diverse portfolio
-            of well-maintained properties, offering a range of options to suit
-            your needs and preferences. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Similique, doloremque. Blanditiis quas libero
-            dolores maiores nemo corporis minus, sunt id sequi. Ullam deserunt
-            odit non, quae fugit praesentium atque quam!
-          </p>
-          <p>
-            <strong>Efficiency:</strong> Our streamlined online platform and
-            experienced team simplify the process of finding your ideal rental
-            or securing qualified tenants for your property. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Similique, doloremque.
-            Blanditiis quas libero dolores maiores nemo corporis minus, sunt id
-            sequi. Ullam deserunt odit non, quae fugit praesentium atque quam!
-          </p>
+            <p>
+              <strong>Responsiveness:</strong> We believe in clear and timely
+              communication, ensuring you always feel informed and supported
+              throughout the rental process. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Similique, doloremque. Blanditiis
+              quas libero dolores maiores nemo corporis minus, sunt id sequi.
+              Ullam deserunt odit non, quae fugit praesentium atque quam!
+            </p>
+            <p>
+              <strong>Quality:</strong> We meticulously manage a diverse
+              portfolio of well-maintained properties, offering a range of
+              options to suit your needs and preferences. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Similique, doloremque.
+              Blanditiis quas libero dolores maiores nemo corporis minus, sunt
+              id sequi. Ullam deserunt odit non, quae fugit praesentium atque
+              quam!
+            </p>
+            <p>
+              <strong>Efficiency:</strong> Our streamlined online platform and
+              experienced team simplify the process of finding your ideal rental
+              or securing qualified tenants for your property. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Similique, doloremque.
+              Blanditiis quas libero dolores maiores nemo corporis minus, sunt
+              id sequi. Ullam deserunt odit non, quae fugit praesentium atque
+              quam!
+            </p>
           </div>
         </article>
       </section>
+
+ 
     </main>
 
     <!-- footer -->
@@ -171,23 +214,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt.
             </p>
-            <ul class="list-inline mt-4">
-              <li class="list-inline-item">
-                <a href="#" target="_blank" title="twitter"
-                  ><i class="fa-brands text-black fa-x"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" target="_blank" title="facebook"
-                  ><i class="fa-brands text-black fa-facebook"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" target="_blank" title="instagram"
-                  ><i class="fa-brands text-black fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
+       
           </div>
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
@@ -256,5 +283,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/team.js"></script>
   </body>
 </html>

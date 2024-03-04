@@ -5,8 +5,6 @@
 
 */
 
-
-
 /*********************************************/
 /*              PRICING SECTION CSS -      "/
 /*********************************************/
@@ -24,9 +22,7 @@ html {
   max-width: 960px;
 }
 
-.pricing__section {
-  max-width: 700px;
-}
+
 
 h1 {
   font-weight: 700;
@@ -37,13 +33,13 @@ h3 {
   font-size: var(--semi-medium-fs);
 }
 
-
 /*********************************************/
 /*              CARD CSS - PRICING PAGE      "/
 /*********************************************/
 
 .card {
-  width: 200px;
+
+  width: 300px;
 }
 
 .card-header h2 {
@@ -58,9 +54,17 @@ h3 {
 }
 
 .card .card-body ul li {
+  display: flex;
+  gap: var(--small-spacing);
+  align-items: center;
   padding: var(--small-spacing) 0;
   font-size: var(--small-fs);
 }
+.card .card-body ul li img {
+  width: 20px;
+  height: 20px;
+}
+
 
 .card .card-body button {
   background-color: var(--blue);

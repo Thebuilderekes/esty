@@ -11,10 +11,9 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: var(--black);
-  font-size: 5rem; 
+  background-color: var(--mid-black);
+  font-size: 5rem;
 }
-
 
 /*********************************************/
 /*              CARDS CSS - HOUSE PAGE        "/
@@ -35,27 +34,23 @@
   font-size: var(--semi-medium-fs);
 }
 
+.card-title {
+  font-size: var(--medium-fs);
+  font-family: "Archivo Black", sans-serif;
+}
 
- 
-  .card-title {
-    font-size: var(--medium-fs);
-    font-family: 'Archivo Black', sans-serif;
-  }
-  
-  .card-address,
-  .card-price {
-    font-size: var(--semi-medium-fs);
-    /* font-weight: 700; */
-    margin-bottom: 5px;
-  }
+.card-address,
+.card-price {
+  font-size: var(--semi-medium-fs);
+  /* font-weight: 700; */
+  margin-bottom: 5px;
+}
 
 @media (min-width: 900px) {
   .card-title {
     font-size: var(--medium-fs);
   }
 }
-
-
 
 @media (min-width: 900px) {
   .card-price {
@@ -81,7 +76,6 @@ dl {
 
 @media (min-width: 900px) {
   .contact-button {
-
     display: inline-block;
     background-color: #333;
     color: #fff;
@@ -91,8 +85,5 @@ dl {
     border-radius: 5px;
     cursor: pointer;
     font-size: var(--small-fs);
-
-
-}
-
+  }
 }

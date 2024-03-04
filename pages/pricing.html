@@ -17,11 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="../assets/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-  <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 
-  <!-- animate.css CDN-->
+    <!-- animate.css CDN-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -73,58 +76,72 @@
         </div>
       </div>
     </nav>
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb ">
+    <nav
+      style="--bs-breadcrumb-divider: '>'"
+      aria-label="breadcrumb "
+    >
       <ol class="breadcrumb p-2">
-        <li class="breadcrumb-item text-black"><a href="/index.html">Home</a></li>
+        <li class="breadcrumb-item text-black">
+          <a href="/index.html">Home</a>
+        </li>
         <li class="breadcrumb-item active" aria-current="page">Pricing</li>
       </ol>
     </nav>
     <main>
       <section
-        class="pricing__section px-md-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
+        class="pricing__section px-md-3 py-3 pt-md-5 pb-md-4 d-flex flex-column justify-content-center align-items-center "
       >
         <h1 class="mb-4 animate__animated animate__fadeIn">Our Pricing</h1>
         <h2 class="mb-4 animate__animated animate__fadeIn">
           Thank you for choosing to advertise with us
         </h2>
 
-            <!--Pricing card section -->
+        <!--Pricing card section -->
         <div
-          class="card-container animate__animated animate__fadeIn d-flex flex-col"
+          class="card-container animate__animated animate__fadeIn d-flex "
         >
           <div
-            class="card-deck mb-3 d-flex flex-md-row justify-content-center gap-4 flex-wrap text-center"
+            class="card-deck mb-3 d-flex flex-col flex-md-row justify-content-center gap-4 flex-wrap text-center"
           >
             <article class="card mb-4 box-shadow">
               <div class="card-header">
                 <h2 class="my-0 font-weight-normal">Starter</h2>
               </div>
-              <div class="card-body">
-                <h3 class="card-title pricing-card-title">
+              <div class="card-body d-flex flex-column align-items-center  ">
+                <h3 class="card-title fw-bold pricing-card-title">
                   ₦5,000 <small>/ month</small>
                 </h3>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Rental Listing</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Rental Listing</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Email support</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Property Management Services</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Rental Property Maintenance</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Matching Services</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Relocation Services</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Screening</li>
                 </ul>
                 <button tabindex="0" type="button" class="btn bg-grey">
                   Contact us
                 </button>
               </div>
             </article>
-            <article class="card mb-4 box-shadow">
+            <article class="card  mb-4 box-shadow">
               <div class="card-header">
                 <h2 class="my-0 font-weight-normal">Pro</h2>
               </div>
-              <div class="card-body">
-                <h3 class="card-title pricing-card-title">
+              <div class="card-body d-flex flex-column align-items-center  ">
+                <h3 class="card-title fw-bold pricing-card-title">
                   ₦10,000 <small>/ month</small>
                 </h3>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Front page listing</li>
-                  <li>Priority email support</li>
-                  <li>Help center access</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Front page listing</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Priority email support</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Screening</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Rental Property Marketing</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Lease Agreement Template</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Matching Services</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Relocation Services</li>
+               
                 </ul>
 
                 <button tabindex="0" type="button" class="btn bg-grey">
@@ -136,14 +153,19 @@
               <div class="card-header">
                 <h2 class="my-0 font-weight-normal">Enterprise</h2>
               </div>
-              <div class="card-body">
-                <h3 class="card-title pricing-card-title">
+              <div class="card-body d-flex flex-column align-items-center  ">
+                <h3 class="card-title fw-bold pricing-card-title">
                   ₦50,000 <small>/ year</small>
                 </h3>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1 year listing</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark">1 year listing</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Phone and email support</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Front page listing</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Priority email support</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Screening</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Rent Collection Services</li>
+                  <li><img src="/assets/images/icons/icons8-check-mark-48.png" alt="check mark icon">Tenant Matching Services</li>
+                
                 </ul>
 
                 <button tabindex="0" type="button" class="btn bg-grey">
@@ -166,23 +188,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt.
             </p>
-            <ul class="list-inline mt-4">
-              <li class="list-inline-item">
-                <a href="#" target="_blank" title="twitter"
-                  ><i class="fa-brands text-black fa-x"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" target="_blank" title="facebook"
-                  ><i class="fa-brands text-black fa-facebook"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" target="_blank" title="instagram"
-                  ><i class="fa-brands text-black fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
+       
           </div>
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h6 class="text-uppercase fw-bold mb-4">Pages</h6>
@@ -191,13 +197,19 @@
                 <a href="/index.html" class="text-decoration-none">Home</a>
               </li>
               <li class="mb-2">
-                <a href="/pages/about.html" class="text-decoration-none">About</a>
+                <a href="/pages/about.html" class="text-decoration-none"
+                  >About</a
+                >
               </li>
               <li class="mb-2">
-                <a href="/pages/pricing.html" class="text-decoration-none">Pricing</a>
+                <a href="/pages/pricing.html" class="text-decoration-none"
+                  >Pricing</a
+                >
               </li>
               <li class="mb-2">
-                <a href="/pages/contact.html" class="text-decoration-none">Contact us</a>
+                <a href="/pages/contact.html" class="text-decoration-none"
+                  >Contact us</a
+                >
               </li>
             </ul>
           </div>
@@ -231,7 +243,7 @@
                 />
                 <div class="input-group-append">
                   <button id="button-addon1" type="submit" class="btn btn-link">
-                    <img src="/assets/images/icons/paper-plane-30.png" alt="" />
+                    <img src="/assets/images/icons/paper-plane-30.png" alt="paper plane icon" />
                   </button>
                 </div>
               </form>

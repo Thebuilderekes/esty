@@ -48,17 +48,16 @@
 }
 
 /*********************************************/
-/*             2. ABOUT SECTION CSS                 "/
+/*             2. ABOUT SECTION CSS           "/
 /*********************************************/
 
-.about-us__section {
+.section__spacing {
   margin: var(--large-spacing) var(--small-spacing);
-  padding: var(--small-spacing);
 }
 
 @media (min-width: 800px) {
-  .about-us__section {
-    padding: var(--large-spacing);
+  .section__spacing {
+    margin: var(--large-spacing);
   }
 }
 
@@ -71,7 +70,7 @@
 }
 
 .core-values {
-  padding: var(--medium-spacing);
+  /* padding: var(--medium-spacing); */
   background-color: var(--light-blue);
   /* border-radius: 20px; */
 }
@@ -97,29 +96,74 @@
   }
 }
 
-.home__h3 {
-  font-size: var(--semi-medium-fs);
-  font-weight: 700;
-}
 
-@media (min-width: 800px) {
-  .home__h3 {
-    font-size: var(--semi-large-fs);
-  }
-}
 
 section p {
-  color: var(  --dark-grey);
+  color: var(--dark-grey);
   font-size: var(--small-fs);
-  margin-bottom: var(--large-spacing);
 }
 
-strong{
-  color: var(--black);
+strong {
+  color: var(--mid-black);
 }
 
 @media (min-width: 800px) {
   section p {
     font-size: var(--semi-medium-fs);
   }
+}
+
+/*=======OUR TEAM MEMBERS  CSS============*/
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-member {
+  position: relative;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.team-member img {
+  width: 300px;
+  height: 300px;
+}
+
+@media (min-width: 800px) {
+  .team-member img {
+    width: 500px;
+    height: 500px;
+  }
+
+}
+
+.team-member-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 300px;
+  color: var(--grey);
+  font-weight: bold;
+  font-size: var(--semi-medium-fs);
+  background-color: rgba(25, 35, 54, 0.399);
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 800px) {
+  .team-member-text {
+  font-size: var(--medium-fs);
+  height: 500px;
+
+  }
+}
+
+.team-member:hover .team-member-text {
+  opacity: 1;
 }
