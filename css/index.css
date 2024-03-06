@@ -108,7 +108,7 @@ h6 {
   --blue: #07058d;
   --mid-blue: #312ef3;
   --light-blue: #dee7fd;
-  --light-gold: #f1ddaa;
+  --light-gold: #f7d98f;
 
   /*==================Spacing============================*/
 
@@ -187,6 +187,7 @@ nav ul li a {
   cursor: pointer;
   color: var(--grey) !important;
   text-decoration: none;
+  /* font-size: var(--default-fs); */
 }
 nav ul li a:hover {
   color: var(--light-blue) !important;
@@ -308,7 +309,7 @@ ul {
 
 .house-card ul {
   display: flex;
-  gap: var(--small-spacing);
+  gap: var(--large-spacing);
 }
 
 .house-card ul li {
