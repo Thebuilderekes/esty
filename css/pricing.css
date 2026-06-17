@@ -9,6 +9,31 @@
 /*              PRICING SECTION CSS -      "/
 /*********************************************/
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+:root {
+      --primary: #2563eb;       /* Vibrant Trust Blue */
+      --primary-dark: #1d4ed8;
+      --text-dark: #1e293b;    /* Slate 800 */
+      --text-muted: #64748b;   /* Slate 500 */
+      --bg-light: #f8fafc;     /* Slate 50 */
+      --bg-card: #ffffff;
+      --border: #e2e8f0;       /* Slate 200 */
+      --accent: #eff6ff;       /* Light blue tint */
+
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+
 html {
   font-size: var(--small-fs);
 }
@@ -26,6 +51,10 @@ html {
 
 h1 {
   font-weight: 700;
+}
+
+h1 span {
+color: var(--primary);
 }
 
 h2,

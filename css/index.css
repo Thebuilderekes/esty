@@ -15,7 +15,7 @@ Version: 1.0
 5. HERO SECTION
 6. TAB CONTENT
 7. HOUSE CARDS CSS - HOME PAGE
-8. FOOTER CSS 
+8. FOOTER CSS
 */
 
 /*********************************************/
@@ -29,9 +29,11 @@ Version: 1.0
   list-style: none;
   text-decoration: none;
 }
+
 a {
   text-decoration: none !important;
 }
+
 *,
 *::before,
 *::after {
@@ -48,9 +50,10 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+background-color: #f8fafc; /* Slate 50 */
   overflow-x: hidden;
-  font-family: "Inter", sans-serif;
 }
+
 /*
      Improve media defaults
   */
@@ -62,6 +65,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
    Remove built-in form typography styles
   */
@@ -91,17 +95,24 @@ h6 {
 :root {
   /*==================Font size============================*/
 
-  --large-fs: 3.75rem; /*60px*/
-  --semi-large-fs: 1.875rem; /*30px*/
-  --medium-fs: 1.5rem; /*24px*/
-  --semi-medium-fs: 1.125rem; /*18px*/
-  --default-fs: 1rem; /*16px*/
-  --small-fs: 0.87rem; /*14px*/
-  --smallest-fs: 0.75rem; /*12px*/
+  --large-fs: 3.75rem;
+  /*60px*/
+  --semi-large-fs: 1.875rem;
+  /*30px*/
+  --medium-fs: 1.5rem;
+  /*24px*/
+  --semi-medium-fs: 1.125rem;
+  /*18px*/
+  --default-fs: 1rem;
+  /*16px*/
+  --small-fs: 0.87rem;
+  /*14px*/
+  --smallest-fs: 0.75rem;
+  /*12px*/
 
   /*==================Colors============================*/
   --dark-grey: #54595f;
-  --grey: #fdfdfd;
+  --grey: #f8fafc;
   --soft-grey: #cac9c9;
   --black: #000000;
   --mid-black: #212121;
@@ -112,11 +123,16 @@ h6 {
 
   /*==================Spacing============================*/
 
-  --extra-large-spacing: 7.5rem; /*120px*/
-  --large-spacing: 3.125rem; /*50px*/
-  --semi-medium-spacing: 2rem; /*32px*/
-  --medium-spacing: 1.25rem; /*20px*/
-  --small-spacing: 0.625rem; /*10px*/
+  --extra-large-spacing: 7.5rem;
+  /*120px*/
+  --large-spacing: 3.125rem;
+  /*50px*/
+  --semi-medium-spacing: 2rem;
+  /*32px*/
+  --medium-spacing: 1.25rem;
+  /*20px*/
+  --small-spacing: 0.625rem;
+  /*10px*/
 }
 
 /*********************************************/
@@ -126,18 +142,23 @@ h6 {
 .bg-grey {
   background-color: var(--grey);
 }
+
 .bg-soft-grey {
   background-color: var(--soft-grey);
 }
+
 .bg-mid-black {
   background-color: var(--mid-black);
 }
+
 .bg-blue {
   background-color: var(--blue);
 }
+
 .bg-light-blue {
   background-color: var(--light-blue);
 }
+
 .bg-mid-blue {
   background-color: var(--mid-blue);
 }
@@ -145,15 +166,19 @@ h6 {
 .text-bg-soft-grey {
   background-color: var(--grey);
 }
+
 .text-bg-grey {
   background-color: var(--soft-grey);
 }
+
 .text-bg-black {
   background-color: var(--mid-black);
 }
+
 .text-bg-blue {
   background-color: var(--blue);
 }
+
 .text-bg-light-blue {
   background-color: var(--light-blue);
 }
@@ -161,15 +186,19 @@ h6 {
 .text-clr-soft-grey {
   background-color: var(--grey);
 }
+
 .text-clr-grey {
   color: var(--soft-grey);
 }
+
 .text-clr-black {
   color: var(--mid-black);
 }
+
 .text-clr-blue {
   color: var(--blue);
 }
+
 .text-clr-light-blue {
   color: var(--light-blue);
 }
@@ -188,9 +217,11 @@ nav ul li a {
   color: var(--grey) !important;
   text-decoration: none;
 }
+
 nav ul li a:hover {
   color: var(--light-blue) !important;
 }
+
 nav ul li .rounded-pill:hover {
   color: var(--grey) !important;
   background-color: var(--mid-blue);
@@ -203,6 +234,7 @@ nav ul li .rounded-pill:hover {
 .nav-link.active {
   color: var(--soft-grey) !important;
 }
+
 .nav-link:hover {
   color: var(--grey);
 }
@@ -224,12 +256,10 @@ nav .nav-link {
   width: 100%;
   height: 80vh;
 
-  background-image: linear-gradient(
-      to bottom right,
+  background-image: linear-gradient(to bottom right,
       #000 0%,
       rgba(0, 0, 0, 0.5) 50%,
-      transparent 100%
-    ),
+      transparent 100%),
     url("../assets/images/house-images/desktop-optimised/house1.jpeg");
   background-size: cover;
   background-position: center;
@@ -267,6 +297,7 @@ nav ul li a {
 ul {
   padding: 0;
 }
+
 .nav-tabs .nav-link {
   font-size: var(--small-fs);
   color: var(--mid-black) !important;
@@ -291,8 +322,7 @@ ul {
 
 .house-card {
   width: 200px;
-  background-color: var(--grey);
-  /* border: 1px solid #ccc; */
+   background-color: #e2e8f0;       /* Slate 200 */
 }
 
 .house-card a:hover {
@@ -302,6 +332,7 @@ ul {
 .house-card a:focus {
   background-color: var(--mid-black);
 }
+
 .house-card-img {
   margin-bottom: var(--small-spacing);
 }
@@ -316,6 +347,7 @@ ul {
   align-items: center;
   gap: var(--small-spacing);
 }
+
 .house-card li img {
   width: 15px;
   height: 15px;
@@ -329,6 +361,7 @@ footer {
   background-color: var(--black);
   color: var(--soft-grey);
 }
+
 footer ul li a {
   color: var(--soft-grey);
 }
