@@ -1,6 +1,6 @@
 # List a Place
 
-A modern, high-conversion web platform designed for property owners, landlords, and real estate investors looking to list and manage their rental assets seamlessly. This project features a clean, responsive layout tailored to B2B user experiences, focusing on performance metrics and value propositions that drive engagement.
+A modern, high-conversion web platform template designed for property owners, landlords, and real estate investors looking to list and manage their rental assets seamlessly. This project features a clean, responsive layout tailored to B2B user experiences, focusing on performance metrics and value propositions that drive engagement.
 
 ## 🚀 Features
 
