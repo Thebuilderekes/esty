@@ -8,11 +8,36 @@
 /*********************************************/
 /*              CAROUSEL CSS                  "/
 /*********************************************/
+.house-card-section .carousel-inner {
+  width: 60%;
+}
+
+@media (min-width: 900px) {
+  .house-card-section .carousel-inner {
+    width: 70%;
+  }
+}
+
+.carousel-section img {
+  width: 500px;
+  height: 500px;
+}
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: var(--mid-black);
+  /* Adjust the negative value to bring controls closer */
+  width: 80%;
+  background-color: var(--mid-blue);
   font-size: 5rem;
+}
+
+.carousel-control-prev-icon {
+  margin-left: 70%;
+}
+
+.carousel-control-next-icon {
+  margin-right: 70%;
 }
 
 /*********************************************/
@@ -42,7 +67,6 @@
 .card-address,
 .card-price {
   font-size: var(--semi-medium-fs);
-  /* font-weight: 700; */
   margin-bottom: 5px;
 }
 
@@ -66,24 +90,19 @@ dl {
   font-size: var(--smallest-fs);
   font-weight: 700;
   padding: var(--small-spacing) 15px;
-  background-color: #333;
+  background-color: var(--blue);
   color: #fff;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
+.contact-button:hover {
+  background-color: var(--mid-blue);
+}
 
 @media (min-width: 900px) {
   .contact-button {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: var(--small-fs);
   }
 }

@@ -48,13 +48,13 @@
 
     /* --- Typography & Intro --- */
     .intro-block {
-      text-align: center;
       max-width: 700px;
       margin: 1.5rem auto 4rem auto;
     }
 
     .intro-block h1 {
       font-size: 2.5rem;
+      text-align: center;
       font-weight: 800;
       letter-spacing: -0.025em;
       margin-bottom: 1.25rem;
@@ -84,6 +84,16 @@
       border-bottom: 1px solid var(--border);
       padding: 2.5rem 0;
     }
+.who-we-are {
+  background-color: var(--light-gold);
+  padding: var(--medium-spacing);
+  margin-bottom: var(--large-spacing);
+  border: 1px solid var(--light-gold);
+}
+
+.core-values {
+  background-color: var(--light-blue);
+}
 
     .stat-card {
       text-align: center;
@@ -126,6 +136,10 @@
       background: var(--bg-light);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+section p {
+  color: var(--dark-grey);
+  font-size: var(--small-fs);
+}
 
     .feature-card:hover {
       transform: translateY(-2px);
@@ -149,7 +163,7 @@
       border-left: 4px solid var(--primary);
       padding: 2rem;
       border-radius: 0 12px 12px 0;
-      margin-bottom: 4rem;
+      margin: 4rem;
     }
 
     .mission-box p {
@@ -171,6 +185,7 @@
     /* --- CTA Footer --- */
     .cta-block {
       text-align: center;
+      margin: 2rem;
       padding-top: 1rem;
     }
 
@@ -211,6 +226,7 @@
       color: var(--primary);
       border: 1px solid var(--primary);
     }
+
 
     .btn-secondary:hover {
       background-color: brightness(1.1);
