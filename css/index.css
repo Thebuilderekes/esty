@@ -120,6 +120,7 @@ h6 {
   --blue: #07058d;
   --mid-blue: #312ef3;
   --light-blue: #dee7fd;
+  --lighter-blue: #ddefeb;
   --light-gold: #f7d98f;
 
   /*==================Spacing============================*/
@@ -153,17 +154,16 @@ h6 {
 }
 
 
-.bg-soft-grey{
-
-  background-color: var(--soft-grey);
-}
-
 .bg-blue {
   background-color: var(--blue);
 }
 
 .bg-light-blue {
   background-color: var(--light-blue);
+}
+
+.bg-lighter-blue {
+  background-color: var(--lighter-blue);
 }
 
 .bg-mid-blue {

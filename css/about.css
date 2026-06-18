@@ -84,16 +84,7 @@
       border-bottom: 1px solid var(--border);
       padding: 2.5rem 0;
     }
-.who-we-are {
-  background-color: var(--light-gold);
-  padding: var(--medium-spacing);
-  margin-bottom: var(--large-spacing);
-  border: 1px solid var(--light-gold);
-}
 
-.core-values {
-  background-color: var(--light-blue);
-}
 
     .stat-card {
       text-align: center;
@@ -141,10 +132,6 @@ section p {
   font-size: var(--small-fs);
 }
 
-    .feature-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-    }
 
     .feature-card h3 {
       font-size: 1.1rem;
