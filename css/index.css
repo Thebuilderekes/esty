@@ -7,6 +7,7 @@ Version: 1.0
 */
 
 /* CSS Index
+ *
 ---------------------------------------
 1. RESET CSS
 2. VARIABLES CSS
@@ -261,8 +262,7 @@ nav .nav-link {
 
 .hero-section .hero-section__img-background {
   width: 100%;
-  height: 80vh;
-
+  height: 100vh;
   background-image: linear-gradient(to bottom right,
       #000 0%,
       rgba(0, 0, 0, 0.5) 50%,
@@ -290,6 +290,10 @@ nav .nav-link {
     font-size: var(--large-fs);
   }
 }
+ .hover-filter:hover {
+   filter: brightness(0.9);
+ }
+
 
 /*********************************************/
 /*       6. TAB CONTENT CSS                  "/
@@ -332,7 +336,7 @@ ul {
 
 .house-card {
   width: 200px;
-   background-color: #e2e8f0;       /* Slate 200 */
+   background-color: var(--grey);       /* Slate 200 */
 }
 
 .house-card a:hover {
